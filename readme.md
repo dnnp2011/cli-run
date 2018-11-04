@@ -2,8 +2,8 @@
 A npm package that allows node module functions to be tested from the command line. By using cli-run, you can call your module's functions by name, provide arguments for that function, call multiple functions with their arguments, or provide multiple arguments for the same function to be called successively.
 
 ## Installation
-Add the NPM package to your project by running:
-> ```npm i cli-run```
+Add the NPM package to your project as a development dependency by running:
+> ```npm i --save-dev cli-run```
 
 ## Functionality
 * Call functions (both classic functions and arrow functions) contained in the module (Javascript file) from the command line

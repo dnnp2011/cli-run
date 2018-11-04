@@ -3,10 +3,14 @@ module.exports = (function (){
     const util = require('util'), fs = require('fs');
     const readFile = util.promisify(fs.readFile);
 
-    /*(async function () {
-        const data = await readFile(`${__dirname}/${__filename}`);
+    //TODO: Handle non-exported functions
+    //TODO: Make pieces more modular
+    //TODO: Finish implementing planned functionality
 
-    })();*/
+    //TODO: Potential functionality:
+    // Loop through all functions in parent, and call with randomly generated arguments (type checking)
+    // Create common case testing modules for functions (to test common edge cases)
+
     const main = this.process.mainModule.exports;
     if (process.argv.length > 2) {
         process.argv.forEach((arg, index, array) => {
